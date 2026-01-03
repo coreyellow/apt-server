@@ -1,28 +1,38 @@
-Origin: MLMDevs
-Label: MLMDevs APT Repository
+Origin: APT Server
+Label: APT Server
 Suite: test
 Codename: test
-Architectures: amd64 arm64
+Architectures: amd64 arm64 i386
 Components: main
-Description: MLMDevs Debian Package Repository
-Date: Sat, 03 Jan 2026 22:10:52 +0000
+Description: Custom APT Repository
+Date: Sat, 03 Jan 2026 22:11:30 +0000
 MD5Sum:
- 8dc5aea5b03dff8595f096f9e368e888 32 main/binary-i386/Packages.xz
+ de33994b6c1ec31025e5ff33985008aa 11053 main/binary-amd64/Packages
+ 9b1d574c2a39e01c3848a19ba90c682b 2838 main/binary-amd64/Packages.gz
+ 9818ed099200c4178c847106c98cae8c 2716 main/binary-amd64/Packages.xz
+ 72ce7feff5350597ab74b6e312153ec5 11053 main/binary-arm64/Packages
+ 4f5bdce81e3f683de3e497603db4facb 2829 main/binary-arm64/Packages.gz
+ d18f7d1da9a45c23a1ef7699a32d1aeb 2716 main/binary-arm64/Packages.xz
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
- e692ac758f6d99fad553527d71ecfad8 29 main/binary-i386/Packages.gz
- 20c6b5f934dc96527564af06ca17d6b4 2620 main/binary-amd64/Packages.xz
- 217921d1a12da4880eaa48a15d480903 3645 main/binary-amd64/Packages
- bc50135c5b91d52059c360796bfa8c42 946 main/binary-amd64/Packages.gz
- 6f845d741ca54b977c737c631076831d 2628 main/binary-arm64/Packages.xz
- 7e96d515636cfc7fa192ed18f2d1333e 3645 main/binary-arm64/Packages
- 60e0143cbbaaba3003b9575d836db1bd 948 main/binary-arm64/Packages.gz
+ 76bfe68968fe20569a46b52e59adbe7d 29 main/binary-i386/Packages.gz
+ 8dc5aea5b03dff8595f096f9e368e888 32 main/binary-i386/Packages.xz
+SHA1:
+ c680bc12a3fc6317226ac0e9ed1baa6e7feb0115 11053 main/binary-amd64/Packages
+ d0dd4f3202677a0673c6a62dd37f253f95582094 2838 main/binary-amd64/Packages.gz
+ a631f322abb7ae3ba87383a53818d764684ad0ed 2716 main/binary-amd64/Packages.xz
+ 17b8ece46ba0ea50b6701673ee3d0e3209a83f1c 11053 main/binary-arm64/Packages
+ c79f8ed0a9c0004f82f96cc3bed91bfc3bd2cdf5 2829 main/binary-arm64/Packages.gz
+ 320a4a421a86764a47c693741e5f1e1bcb71276c 2716 main/binary-arm64/Packages.xz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
+ cbdbfefe36549b5f0c430a24ce8e0c69f0992f77 29 main/binary-i386/Packages.gz
+ 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main/binary-i386/Packages.xz
 SHA256:
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main/binary-i386/Packages.xz
+ c9944afc64ec9df440f65d6fda505049c6747101ba5bf9e75eccd50386e64b86 11053 main/binary-amd64/Packages
+ 9232b45a4f9c72800eeee8b9ac1ac169a888463651d5b1d5185560039879c94f 2838 main/binary-amd64/Packages.gz
+ 6b46b7dc38e88faac83b7db26cae3fa55c55da685a3b417478b6dfa7a507fc25 2716 main/binary-amd64/Packages.xz
+ 6af357123f39b65c293a09b993b09e7cb55c95f986b3a2f1ecb85a6e5e74624b 11053 main/binary-arm64/Packages
+ 9f02d976f2533b48fb27bff0472c57730f43b1f067c1c8c5f4ef5b17f1f1365d 2829 main/binary-arm64/Packages.gz
+ 42fc5191dde39549bcc7a66f39435578978395031af5cf6b1273c6f9ba3bb5b9 2716 main/binary-arm64/Packages.xz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
- 209104c058cc5212c7dcf9f10fd130f8d4af3278184fb0aed916097b39c6ef66 29 main/binary-i386/Packages.gz
- 2b439df0c7cad0edba9ee799f0da95597df121014ba35b2eccc5968d520c5abe 2620 main/binary-amd64/Packages.xz
- cef1ab037aef53b4811b7c37201bc47ad58ce41401401c5e4eb1233e1ff7ae9f 3645 main/binary-amd64/Packages
- 4da5bd7de9e6294c6a9b3cd231b0544291b05a870c9cfa6f6fbd6086e83d4976 946 main/binary-amd64/Packages.gz
- 4c428bb8c59194654f8b41a657914d9e4fcdadf7c540a120fed0efe3c27b5e27 2628 main/binary-arm64/Packages.xz
- e12cdb7842067ac339fd7a4ca9ec42890f0cc852ff4be1251feb534e27724cfc 3645 main/binary-arm64/Packages
- 2c1bd48bdf4cd2d95c35620247f6a30d715bf1983650f491adddc016e363c918 948 main/binary-arm64/Packages.gz
+ 6f546261d16b63457833579730a8866230bd110b2f5b8216b200e3530f3deda1 29 main/binary-i386/Packages.gz
+ 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main/binary-i386/Packages.xz
