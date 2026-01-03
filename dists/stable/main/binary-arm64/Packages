@@ -1,0 +1,252 @@
+Package: blazor-net-app
+Version: 2.0.0
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <dev@mlmdevs.com>
+Description: BlazorNetApp - .NET REST API with MQTT and Bootstrap UI
+ A comprehensive .NET template featuring REST API, MQTT support,
+ SQLite database, OpenAPI/Swagger documentation, and Bootstrap 5 UI.
+ This package is self-contained and includes .NET 10 runtime.
+Filename: pool/stable/blazor-net-app/blazor-net-app_2.0.0_arm64.deb
+Size: 39838016
+MD5sum: f65965dddd565a93bcfc8cb6fafa9bf5
+SHA1: d8af2aca68cd2e284c374e4e2c85bf6178fb7c2a
+SHA256: 60a2485826259a724d0b13cb5b3a27b23794d892bbe8dcf97578a6aa25268b40
+
+Package: blazor-net-app
+Version: 1.0.0
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <dev@mlmdevs.com>
+Description: BlazorNetApp - .NET REST API with MQTT and Bootstrap UI
+ A comprehensive .NET template featuring REST API, MQTT support,
+ SQLite database, OpenAPI/Swagger documentation, and Bootstrap 5 UI.
+ This package is self-contained and includes .NET 10 runtime.
+Filename: pool/stable/blazor-net-app/blazor-net-app_1.0.0_arm64.deb
+Size: 39289268
+MD5sum: 6f49562ed8291fa357d10adcd9a61203
+SHA1: 3b3f92a7f828668a016bc52b7810b14a4b2d9846
+SHA256: aad4b4ed55c045fc0ff1b76ecd74444ea202eaa330509211f71b205ddc7b21b5
+
+Package: image-recognition-service
+Version: 0.1.0
+Section: utils
+Priority: optional
+Architecture: arm64
+Depends: python3 (>= 3.8), python3-pip, python3-venv, mosquitto, mosquitto-clients
+Maintainer: MLM Devs <dev@mlmdevs.com>
+Description: AI-powered home monitoring system
+ Image Recognition Service detects people, pets, smoke, fire, and open
+ windows/doors in images and videos. It provides a FastAPI web service
+ with MQTT integration for real-time monitoring capabilities.
+ .
+ Features:
+  - AI-Powered Detection (people, pets, smoke, fire, windows/doors)
+  - FastAPI Web Service with OpenAPI documentation
+  - MQTT Integration for real-time monitoring
+  - Multi-Location Support
+  - Systemd Service integration
+Filename: pool/stable/image-recognition-service/image-recognition-service_0.1.0_arm64.deb
+Size: 25046
+MD5sum: 718164135ca1ff2b430fb1d5df79a422
+SHA1: c5c5acf91a03a772f4b3b56dc51203d2b4072053
+SHA256: c0d1e22ec940d7fa926591f9fcdd0bbcf5340904827107deacaacceeff519439
+
+Package: gemini-interview-coding-app
+Version: 1.0.0
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: Gemini Interview Coding App <support@example.com>
+Depends: python3 (>= 3.10), python3-pip, python3-venv
+Recommends: nginx, certbot, python3-certbot-nginx
+Description: AI-powered interview coding generator
+ A full-stack application that generates AI-powered interview coding questions
+ using Google Gemini. Built with React + TypeScript for the frontend
+ and Python + FastAPI for the backend.
+ .
+ Features:
+  - AI-generated interview coding questions using Google Gemini API
+  - Save coding challenge results to markdown files
+  - Review saved coding challenges with visual indicators
+  - Modern, responsive UI
+Homepage: https://github.com/milagan/gemini-interview-coding-app
+Filename: pool/stable/gemini-interview-coding-app/gemini-interview-coding-app_1.0.0_arm64.deb
+Size: 80772
+MD5sum: 75bf2b60f4f8ac81486081ba8bf81b7e
+SHA1: bd73885a172334606564bff9bf8ba345adb40bc3
+SHA256: 2851e98142f18e901815355cd708b324056276977744498c301a6f8c49c65862
+
+Package: flask-app
+Version: 0.1.1
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <mlmdevs@example.com>
+Depends: python3 (>= 3.9), python3-venv, python3-pip
+Homepage: https://github.com/mlmdevs/copilot-flask-template
+Changelog-URL: https://github.com/mlmdevs/apt-server/blob/main/changelogs/flask-app/changelog.txt
+Description: Flask CRUD Application Template
+ A complete Flask application template with REST API, web interface,
+ SQLite database, and Bootstrap frontend. This package includes systemd
+ service configuration for production deployment.
+ .
+ Features:
+  - Flask Web Framework with REST API
+  - Web Interface with Bootstrap 5
+  - SQLite Database with SQLAlchemy ORM
+  - CRUD Operations
+  - Systemd Service for production deployment
+  - Gunicorn WSGI server
+Filename: pool/stable/flask-app/flask-app_0.1.1_arm64.deb
+Size: 8784
+MD5sum: 8ac282132e24ea8071e07708edf892ee
+SHA1: b65f8a3f4babe3980a6bbd9fa4a17f8bea7ac521
+SHA256: 26e4f6f99f2add861c6d2159ee645aa978ba1be7ffab284356be6d853d7ca3a4
+
+Package: gemini-interview-question-app
+Version: 1.0.0
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: Gemini Interview Question App <support@example.com>
+Depends: python3 (>= 3.10), python3-pip, python3-venv
+Recommends: nginx, certbot, python3-certbot-nginx
+Description: AI-powered interview question generator
+ A full-stack application that generates AI-powered interview questions
+ using Google Gemini. Built with React + TypeScript for the frontend
+ and Python + FastAPI for the backend.
+ .
+ Features:
+  - AI-generated questions using Google Gemini API
+  - Multiple-choice questions with hints and explanations
+  - Save quiz results to markdown files
+  - Review saved quizzes with visual indicators
+  - Modern, responsive UI
+Homepage: https://github.com/milagan/gemini-interview-question-app
+Filename: pool/stable/gemini-interview-question-app/gemini-interview-question-app_1.0.0_arm64.deb
+Size: 70660
+MD5sum: e8be596b8015117cebe53ba0b9114712
+SHA1: 87cb7c6e65e94865810fc018cdfd4475337e415f
+SHA256: d8cf6d207b0bc353bbec27d6f436b507d1adc8dac6caaf73b5bda76c634e650a
+
+Package: gemini-interview-question-app
+Version: 1.1.0
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: Gemini Interview Question App <support@example.com>
+Depends: python3 (>= 3.10), python3-pip, python3-venv
+Recommends: nginx, certbot, python3-certbot-nginx
+Description: AI-powered interview question generator
+ A full-stack application that generates AI-powered interview questions
+ using Google Gemini. Built with React + TypeScript for the frontend
+ and Python + FastAPI for the backend.
+ .
+ Features:
+  - AI-generated questions using Google Gemini API
+  - Multiple-choice questions with hints and explanations
+  - Save quiz results to markdown files
+  - Review saved quizzes with visual indicators
+  - Modern, responsive UI
+Homepage: https://github.com/milagan/gemini-interview-question-app
+Filename: pool/stable/gemini-interview-question-app/gemini-interview-question-app_1.1.0_arm64.deb
+Size: 73956
+MD5sum: 1adc66f798072b542cab9ca329f0ab15
+SHA1: 4bb6720dcf0e1c9145fe8ca8f03c1ae4f00a4a45
+SHA256: 37e15cf6423030873df6eee281109a5dccaa33ee17c4dc49006d52ff76e817a9
+
+Package: gemini-interview-question-app
+Version: 1.2.0
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: Gemini Interview Question App <support@example.com>
+Depends: python3 (>= 3.10), python3-pip, python3-venv
+Recommends: nginx, certbot, python3-certbot-nginx
+Description: AI-powered interview question generator
+ A full-stack application that generates AI-powered interview questions
+ using Google Gemini. Built with React + TypeScript for the frontend
+ and Python + FastAPI for the backend.
+ .
+ Features:
+  - AI-generated questions using Google Gemini API
+  - Multiple-choice questions with hints and explanations
+  - Save quiz results to markdown files
+  - Review saved quizzes with visual indicators
+  - Modern, responsive UI
+Homepage: https://github.com/milagan/gemini-interview-question-app
+Filename: pool/stable/gemini-interview-question-app/gemini-interview-question-app_1.2.0_arm64.deb
+Size: 74746
+MD5sum: 089b7abf2ddadc1eba82b445041d716b
+SHA1: 1e2f85f3da8f10f98f4e48ade1193a14b9204818
+SHA256: c367ea55d5c6dc8b1c7da1d9cd082fa502586083d338a1a464541791d1bd0ecd
+
+Package: net-app
+Version: 0.1.0
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <dev@mlmdevs.com>
+Description: Net App - .NET REST API with MQTT and Bootstrap UI
+ A comprehensive .NET template featuring REST API, MQTT support,
+ SQLite database, OpenAPI/Swagger documentation, and Bootstrap 5 UI.
+ This package is self-contained and includes .NET 10 runtime.
+Filename: pool/stable/net-app/net-app_0.1.0_arm64.deb
+Size: 39047500
+MD5sum: 8cc09f3135fce1fc1d3f289d3a7fbc4e
+SHA1: abd2c8445e3a46b856f8df4440d62fd02e4628a2
+SHA256: d36a7c2e6eae7a6e3303bfd019d3b932091e8b90d75611d5fc7b29a3d6a8018d
+
+Package: changelog-test
+Version: 1.0.0
+Architecture: all
+Maintainer: Test <test@example.com>
+Description: Test package for changelog extraction
+ This package tests changelog hosting functionality.
+Filename: pool/stable/changelog-test/changelog-test_1.0.0_all.deb
+Size: 762
+MD5sum: 1a1008b9725f9fa36b391e4cb2582c5e
+SHA1: 5216c60f38c961eba70faf9e6a7c53e2ef9f9a90
+SHA256: 60ff3e956f77e6ca42551066648fc5025617577d5b3b1e17ce7355b898a98791
+
+Package: cockpit-todo-manager
+Version: 0.0.3
+Architecture: all
+Maintainer: MLM Devs <milagan@users.noreply.github.com>
+Installed-Size: 1713
+Depends: cockpit-bridge
+Section: admin
+Priority: optional
+Homepage: https://github.com/mlmdevs/cockpit-todo-manager
+Description: TODO Manager frontend for Cockpit
+ A Cockpit module that provides a web interface for managing
+ TODO items via a REST API. This module allows users to create,
+ update, delete, and mark TODO items as complete.
+Filename: pool/stable/cockpit-todo-manager/cockpit-todo-manager_0.0.3_amd64.deb
+Size: 220406
+MD5sum: 24da54eb30b503706f55202003a78799
+SHA1: 92ad4c059ede10c8d9541c39d55aee8b333c3e8d
+SHA256: 094d556b1f83676e02086356ea08ec8f48cfd731afc5c64245d4ba2b3c13d137
+
+Package: cockpit-todo-manager
+Version: 0.0.3
+Architecture: all
+Maintainer: MLM Devs <milagan@users.noreply.github.com>
+Installed-Size: 1713
+Depends: cockpit-bridge
+Section: admin
+Priority: optional
+Homepage: https://github.com/mlmdevs/cockpit-todo-manager
+Description: TODO Manager frontend for Cockpit
+ A Cockpit module that provides a web interface for managing
+ TODO items via a REST API. This module allows users to create,
+ update, delete, and mark TODO items as complete.
+Filename: pool/stable/cockpit-todo-manager/cockpit-todo-manager_0.0.3_arm64.deb
+Size: 220380
+MD5sum: e2e800ac4935a54e337e1d4c638e158d
+SHA1: 45111d275bb7f8c4ed2634ab6e6386dc2d97ab46
+SHA256: aeb4626812a07b74f6d0e8ece1e3a11a6ec0c581a2f5fcbf5e1d5bf492432ed9
+

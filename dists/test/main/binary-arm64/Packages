@@ -1,0 +1,261 @@
+Package: blazor-net-app
+Version: 1.0.1
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <dev@mlmdevs.com>
+Description: BlazorNetApp - .NET REST API with MQTT and Bootstrap UI
+ A comprehensive .NET template featuring REST API, MQTT support,
+ SQLite database, OpenAPI/Swagger documentation, and Bootstrap 5 UI.
+ This package is self-contained and includes .NET 10 runtime.
+Filename: pool/test/blazor-net-app/blazor-net-app_1.0.1_arm64.deb
+Size: 39837338
+MD5sum: d5c74b75462df96d2127e9c06e9b13d5
+SHA1: 2b4ed2ef6e6f18484241607ce8006bfd90fd99cd
+SHA256: 63db8ca8c773634387795cd39c495220eaf1e11ac7e55a45362725d8a6d1b3d8
+
+Package: blazor-net-app
+Version: 1.0.2
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <dev@mlmdevs.com>
+Description: BlazorNetApp - .NET REST API with MQTT and Bootstrap UI
+ A comprehensive .NET template featuring REST API, MQTT support,
+ SQLite database, OpenAPI/Swagger documentation, and Bootstrap 5 UI.
+ This package is self-contained and includes .NET 10 runtime.
+Filename: pool/test/blazor-net-app/blazor-net-app_1.0.2_arm64.deb
+Size: 39837742
+MD5sum: 85648311fdb1082a58764e219fc11568
+SHA1: 08906b66f84a4b39380b3478c803e624aea8e527
+SHA256: a6b4c4e44f9ad90f9406e6c343161656a2e9cbb3bc96991dd95877de333018d5
+
+Package: blazor-net-app
+Version: 2.0.1
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <dev@mlmdevs.com>
+Description: BlazorNetApp - .NET REST API with MQTT and Bootstrap UI
+ A comprehensive .NET template featuring REST API, MQTT support,
+ SQLite database, OpenAPI/Swagger documentation, and Bootstrap 5 UI.
+ This package is self-contained and includes .NET 10 runtime.
+Filename: pool/test/blazor-net-app/blazor-net-app_2.0.1_arm64.deb
+Size: 39838472
+MD5sum: dac66d10f372a58b7d6e53b88f8af6e3
+SHA1: df1efcede6221c77a8b081bb7095021b50dc3092
+SHA256: 87d9feab638c31223c54d840cd4e6cf59e06db872b6eaebce3df73dfeaa087cb
+
+Package: blazor-net-app
+Version: 1.0.3
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <dev@mlmdevs.com>
+Description: BlazorNetApp - .NET REST API with MQTT and Bootstrap UI
+ A comprehensive .NET template featuring REST API, MQTT support,
+ SQLite database, OpenAPI/Swagger documentation, and Bootstrap 5 UI.
+ This package is self-contained and includes .NET 10 runtime.
+Filename: pool/test/blazor-net-app/blazor-net-app_1.0.3_arm64.deb
+Size: 39837490
+MD5sum: d51970880bf9a14f69e861f1cc60d57d
+SHA1: ade62cad276b259483953dd94de6c6a23b97c1aa
+SHA256: 5c7b9d295b282e988bee2eb95eaa94dec4813689bca9972dd2213adbdbec10df
+
+Package: image-recognition-service
+Version: 0.0.7
+Section: utils
+Priority: optional
+Architecture: arm64
+Depends: python3 (>= 3.8), python3-pip, python3-venv, mosquitto, mosquitto-clients
+Maintainer: MLM Devs <dev@mlmdevs.com>
+Description: AI-powered home monitoring system
+ Image Recognition Service detects people, pets, smoke, fire, and open
+ windows/doors in images and videos. It provides a FastAPI web service
+ with MQTT integration for real-time monitoring capabilities.
+ .
+ Features:
+  - AI-Powered Detection (people, pets, smoke, fire, windows/doors)
+  - FastAPI Web Service with OpenAPI documentation
+  - MQTT Integration for real-time monitoring
+  - Multi-Location Support
+  - Systemd Service integration
+Filename: pool/test/image-recognition-service/image-recognition-service_0.0.7_arm64.deb
+Size: 25048
+MD5sum: 1a92be7b06da46800d4259273ec726df
+SHA1: 02e53b675aa8b724890d8eedeb552f06b1540ed7
+SHA256: 5c2b7375460488013eacf22340edf8ec7647ce9cf46e7b08f6e3d78ceeaf81e5
+
+Package: gemini-interview-coding-app
+Version: 0.0.4
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: Gemini Interview Coding App <support@example.com>
+Depends: python3 (>= 3.10), python3-pip, python3-venv
+Recommends: nginx, certbot, python3-certbot-nginx
+Description: AI-powered interview coding generator
+ A full-stack application that generates AI-powered interview coding questions
+ using Google Gemini. Built with React + TypeScript for the frontend
+ and Python + FastAPI for the backend.
+ .
+ Features:
+  - AI-generated interview coding questions using Google Gemini API
+  - Save coding challenge results to markdown files
+  - Review saved coding challenges with visual indicators
+  - Modern, responsive UI
+Homepage: https://github.com/milagan/gemini-interview-coding-app
+Filename: pool/test/gemini-interview-coding-app/gemini-interview-coding-app_0.0.4_arm64.deb
+Size: 80784
+MD5sum: c61d097f06e7c21c47a51b0f8bc3f4be
+SHA1: c084ca3e6fdc1aa36d1d648aa7f9bfe2f48c748a
+SHA256: b5e2af93469f4fcfa8fa604aab8474598263ea3aabd553858ddeba8f6ffba870
+
+Package: gemini-interview-coding-app
+Version: 0.0.2
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: Gemini Interview Coding App <support@example.com>
+Depends: python3 (>= 3.10), python3-pip, python3-venv
+Recommends: nginx, certbot, python3-certbot-nginx
+Description: AI-powered interview coding generator
+ A full-stack application that generates AI-powered interview coding questions
+ using Google Gemini. Built with React + TypeScript for the frontend
+ and Python + FastAPI for the backend.
+ .
+ Features:
+  - AI-generated interview coding questions using Google Gemini API
+  - Save coding challenge results to markdown files
+  - Review saved coding challenges with visual indicators
+  - Modern, responsive UI
+Homepage: https://github.com/milagan/gemini-interview-coding-app
+Filename: pool/test/gemini-interview-coding-app/gemini-interview-coding-app_0.0.2_arm64.deb
+Size: 80738
+MD5sum: a86d39d74faa75dce690ddc02fc9d305
+SHA1: 7eb794c29dc98b019fa758dd4b8d2f662ff62c47
+SHA256: 8004b70eab19d77296abc3aa2cad0c60556ab89c9cb83dbcb6d22692a8888582
+
+Package: flask-app
+Version: 0.1.2
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <mlmdevs@example.com>
+Depends: python3 (>= 3.9), python3-venv, python3-pip
+Homepage: https://github.com/mlmdevs/copilot-flask-template
+Changelog-URL: https://github.com/mlmdevs/apt-server/blob/main/changelogs/flask-app/changelog.txt
+Description: Flask CRUD Application Template
+ A complete Flask application template with REST API, web interface,
+ SQLite database, and Bootstrap frontend. This package includes systemd
+ service configuration for production deployment.
+ .
+ Features:
+  - Flask Web Framework with REST API
+  - Web Interface with Bootstrap 5
+  - SQLite Database with SQLAlchemy ORM
+  - CRUD Operations
+  - Systemd Service for production deployment
+  - Gunicorn WSGI server
+Filename: pool/test/flask-app/flask-app_0.1.2_arm64.deb
+Size: 8780
+MD5sum: daf26514f722ab9b14af65149f2a265b
+SHA1: 83e4a25b9af7f01fc14e4bb80c011af914abe781
+SHA256: a72c85e21d0507d97a667e5ddd2c47f1a3ba55ec965aa36951539bc84c908bc6
+
+Package: gemini-interview-question-app
+Version: 0.3.0
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: Gemini Interview Question App <support@example.com>
+Depends: python3 (>= 3.10), python3-pip, python3-venv
+Recommends: nginx, certbot, python3-certbot-nginx
+Description: AI-powered interview question generator
+ A full-stack application that generates AI-powered interview questions
+ using Google Gemini. Built with React + TypeScript for the frontend
+ and Python + FastAPI for the backend.
+ .
+ Features:
+  - AI-generated questions using Google Gemini API
+  - Multiple-choice questions with hints and explanations
+  - Save quiz results to markdown files
+  - Review saved quizzes with visual indicators
+  - Modern, responsive UI
+Homepage: https://github.com/milagan/gemini-interview-question-app
+Filename: pool/test/gemini-interview-question-app/gemini-interview-question-app_0.3.0_arm64.deb
+Size: 70170
+MD5sum: 5762a2cd6153193b9397692c8ee4d569
+SHA1: 1b1897d002e6a883693d2bfb0776a09ecebc1a81
+SHA256: 28409f156b86fd7f1d0b6dd15a3a4a7e98e650df35dbcf7305f51d9c2c3b8284
+
+Package: fastapi-app
+Version: 0.0.1
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <mlmdevs@example.com>
+Depends: python3 (>= 3.12), python3-venv, python3-pip
+Homepage: https://github.com/mlmdevs/fast-api-template
+Changelog-URL: https://github.com/mlmdevs/apt-server/blob/main/changelogs/fastapi-app/changelog.txt
+Description: FastAPI CRUD Application
+ A professional FastAPI template with REST API, web interface,
+ SQLite database, and Bootstrap frontend. This package includes systemd
+ service configuration for production deployment.
+ .
+ Features:
+    - FastAPI Web Framework with REST API
+    - Web Interface with Bootstrap 5
+    - SQLite Database with SQLAlchemy ORM
+    - CRUD Operations
+    - Systemd Service for production deployment
+    - Uvicorn ASGI server
+Filename: pool/test/fastapi-app/fastapi-app_0.0.1_arm64.deb
+Size: 8686
+MD5sum: 5c540f38512a5ba028b87cfdcbee461a
+SHA1: 9f5b408dfa080daf97c83707fbbc7814ce6d4e15
+SHA256: c97b819040ae022b000f80ccfd22722b34717dc122ddd9900b51fe5f2f5fd611
+
+Package: fastapi-app
+Version: 0.0.2
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <mlmdevs@example.com>
+Depends: python3 (>= 3.10), python3-venv, python3-pip
+Homepage: https://github.com/mlmdevs/fast-api-template
+Changelog-URL: https://github.com/mlmdevs/apt-server/blob/main/changelogs/fastapi-app/changelog.txt
+Description: FastAPI CRUD Application
+ A professional FastAPI template with REST API, web interface,
+ SQLite database, and Bootstrap frontend. This package includes systemd
+ service configuration for production deployment.
+ .
+ Features:
+    - FastAPI Web Framework with REST API
+    - Web Interface with Bootstrap 5
+    - SQLite Database with SQLAlchemy ORM
+    - CRUD Operations
+    - Systemd Service for production deployment
+    - Uvicorn ASGI server
+Filename: pool/test/fastapi-app/fastapi-app_0.0.2_arm64.deb
+Size: 8682
+MD5sum: 6b2c66773a05f112d3bcaf961c76b4b6
+SHA1: 67f7290a7c3e3758beb069b0c2632f9286278eac
+SHA256: 334f2faac2e7f8172ac1398c34afde46c3cee72ae79db8357f304a62effb2062
+
+Package: net-app
+Version: 0.0.10
+Section: web
+Priority: optional
+Architecture: arm64
+Maintainer: MLM Devs <dev@mlmdevs.com>
+Description: Net App - .NET REST API with MQTT and Bootstrap UI
+ A comprehensive .NET template featuring REST API, MQTT support,
+ SQLite database, OpenAPI/Swagger documentation, and Bootstrap 5 UI.
+ This package is self-contained and includes .NET 10 runtime.
+Filename: pool/test/net-app/net-app_0.0.10_arm64.deb
+Size: 39047484
+MD5sum: 829aa735576f212d6fab97b76f750786
+SHA1: 50411edf9610f9fee46510cdc2e16f875c012b1b
+SHA256: c0def1ea3c4b676fd946d8fc35473267df5ac471a9894e61dbc18c6c8f088259
+

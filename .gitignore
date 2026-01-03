@@ -1,0 +1,19 @@
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+.DS_Store

@@ -1,0 +1,10 @@
+image-recognition-service (1.0.0) stable; urgency=medium
+
+  * Initial release
+  * AI-powered detection for people, pets, smoke, fire, and windows/doors
+  * FastAPI web service with RESTful API
+  * MQTT integration for real-time monitoring
+  * Systemd service support
+  * Multi-location scanning support
+
+ -- MLM Devs <dev@mlmdevs.com>  Sat, 07 Dec 2024 00:00:00 +0000

@@ -1,0 +1,71 @@
+name: Clean Up Pool - Keep Latest Versions Only
+
+on:
+  workflow_dispatch:
+    inputs:
+      distribution:
+        description: 'Distribution to clean up (stable, test, or all)'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - stable
+          - test
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  cleanup-pool:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Clean up pool
+        run: |
+          bash scripts/cleanup-pool.sh "${{ github.event.inputs.distribution }}"
+
+      - name: Update APT repository metadata
+        run: |
+          bash scripts/update-repo.sh all
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add pool/ dists/ changelogs/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            if [ "${{ github.event.inputs.distribution }}" = "all" ]; then
+              git commit -m "Clean up pools: Keep only latest package versions (all distributions) [skip ci]"
+            else
+              git commit -m "Clean up pool: Keep only latest package versions (${{ github.event.inputs.distribution }}) [skip ci]"
+            fi
+            git push
+          fi
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  deploy-pages:
+    needs: cleanup-pool
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

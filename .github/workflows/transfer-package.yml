@@ -1,0 +1,66 @@
+name: Transfer Package to Stable
+
+on:
+  workflow_dispatch:
+    inputs:
+      package_name:
+        description: 'Name of the package to transfer (e.g., flask-app, image-recognition-service)'
+        required: true
+        type: string
+      version:
+        description: 'Version of the package to transfer (e.g., 1.0.0)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  transfer-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Transfer package from test to stable
+        run: |
+          bash scripts/transfer-package.sh "${{ github.event.inputs.package_name }}" "${{ github.event.inputs.version }}"
+
+      - name: Update APT repository metadata
+        run: |
+          bash scripts/update-repo.sh all
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add pool/ dists/ changelogs/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Transfer package: ${{ github.event.inputs.package_name }} version ${{ github.event.inputs.version }} from test to stable [skip ci]"
+            git push
+          fi
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  deploy-pages:
+    needs: transfer-package
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

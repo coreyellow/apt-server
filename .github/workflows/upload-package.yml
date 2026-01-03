@@ -1,0 +1,82 @@
+name: Upload DEB Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      distribution:
+        description: 'Target distribution (stable or test)'
+        required: false
+        default: 'test'
+        type: choice
+        options:
+          - test
+          - stable
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  upload-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Display upload instructions
+        run: |
+          echo "================================================================"
+          echo "Package Upload Workflow"
+          echo "================================================================"
+          echo ""
+          echo "To upload a package:"
+          echo "1. Add your .deb file to: pool/${{ github.event.inputs.distribution }}/main/"
+          echo "2. Commit and push your changes"
+          echo "3. This workflow will automatically update the repository metadata"
+          echo ""
+          echo "Selected distribution: ${{ github.event.inputs.distribution }}"
+          echo ""
+          echo "================================================================"
+
+      - name: Create distribution pool directory
+        run: |
+          mkdir -p "pool/${{ github.event.inputs.distribution }}/main"
+          echo "Created pool directory for ${{ github.event.inputs.distribution }} distribution"
+
+      - name: Update APT repository metadata
+        run: |
+          bash scripts/update-repo.sh all
+
+      - name: Commit updated repository files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dists/ changelogs/ pool/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Upload package to ${{ github.event.inputs.distribution }} distribution [skip ci]"
+            git push
+          fi
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  deploy-pages:
+    needs: upload-package
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

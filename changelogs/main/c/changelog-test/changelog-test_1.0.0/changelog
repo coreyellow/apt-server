@@ -1,0 +1,14 @@
+changelog-test (1.0.0) stable; urgency=low
+
+  * Initial release
+  * Test changelog extraction
+  * Verify hosting works correctly
+
+ -- Test <test@example.com>  Sat, 07 Dec 2024 20:00:00 +0000
+
+changelog-test (0.9.0) stable; urgency=low
+
+  * Beta release
+  * Added initial features
+
+ -- Test <test@example.com>  Fri, 06 Dec 2024 10:00:00 +0000
