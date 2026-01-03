@@ -110,14 +110,14 @@ Add this APT repository to your system. You can choose between the stable and te
 #### For Stable Packages (Production)
 
 ```bash
-echo "deb [trusted=yes] https://mlmdevs.github.io/apt-server stable main" | sudo tee /etc/apt/sources.list.d/custom-repo.list
+echo "deb [trusted=yes] https://coreyellow.github.io/apt-server stable main" | sudo tee /etc/apt/sources.list.d/custom-repo.list
 sudo apt update
 ```
 
 #### For Test Packages (Testing)
 
 ```bash
-echo "deb [trusted=yes] https://mlmdevs.github.io/apt-server test main" | sudo tee /etc/apt/sources.list.d/custom-repo-test.list
+echo "deb [trusted=yes] https://coreyellow.github.io/apt-server test main" | sudo tee /etc/apt/sources.list.d/custom-repo-test.list
 sudo apt update
 ```
 
